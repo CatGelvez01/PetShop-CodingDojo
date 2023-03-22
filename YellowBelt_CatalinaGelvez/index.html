@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow belt - Catalina Gelvez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+    <body>
+
+    <!--Header-->
+    <div class="headerBackground">
+
+        <div class="header">    
+            
+            <div class="main">  
+
+                <div id="title">
+                    <img src="heart-light01.png" alt="">
+                    <h1>Pet Shelter</h1>
+                </div>
+
+                <div id="menu">
+                    <p id="menuOptions1">Find a pet</p>
+                    <p id="menuOptions2">About</p>
+                    <button onclick="removeDonate(this)" id="buttonDonate">Donate</button>
+                </div>
+
+            </div>
+
+            <!--Subheader-->
+            <div class="subHeader">
+
+                <div class="searchPet">
+                    <p id="searchText1">I'm looking for a...</p>
+
+                    <div class="searchPet2">
+                        <img id="icon1" src="paw-light.png" alt="">
+                        <select id="selectPet" name="selectPet">
+                            <option onclick="alertAnyPet(this)" id="OptAny">Any pet</option>
+                            <option onclick="alertCat(this)">Cats</option>
+                            <option onclick="alertDog(this)">Dogs</option>
+                            <option onclick="alertOther(this)">Others</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="searchLocation">
+                    <p id="searchText2">In or near...</p>
+
+                    <div class="searchLocation2">
+                        <img id="icon2" src="pin-light.png" alt="">
+                        <input id="spaceLocation" type="text" placeholder="City or zip code..." name="location">
+                    </div>
+
+                </div>
+
+                <button id="buttonBestFriend">Find your next best friend!</button>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+<!--Shelter body: pet profiles and pet buttons-->
+    <div class="shelterBody">
+
+        <!--Pepper profile-->
+        <div class="pet">
+            <img id="imgPet1" src="pepper.jpg" alt="">
+
+            <div id="petInfo1">
+                <h2>Pepper</h2>
+                <p id="petText1">Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+
+            </div>
+
+            <!--Pepper: pet counter-->
+            <div id="blockCounter1">
+
+                <div id="blockCounter2-1">
+                    <p id="petCounter1">3</p>
+                    <p id="pettingTitle1">Petting(s)</p>
+                </div>
+
+                <button onclick="AddPet1()" id="ButtonPet1">Pet Pepper</button>
+
+            </div>
+
+        </div>
+
+        <!--Bruce profile-->
+        <div class="pet">
+            <img id="imgPet2" src="bruce.jpg" alt="">
+
+            <div id="petInfo2">
+                <h2>Bruce</h2>
+                <p id="petText2">Bruce is a loyal companion. He loves long walks and cold weather.</p>
+
+            </div>
+
+            <!--Bruce: pet counter-->
+            <div id="blockCounter2">
+
+                <div id="blockCounter2-2">
+                    <p id="petCounter2">5</p>
+                    <p id="pettingTitle2">Petting(s)</p>
+                </div>
+
+                <button onclick="AddPet2()" id="ButtonPet2">Pet Bruce</button>
+                
+            </div>
+
+        </div>
+
+         <!--Oscar profile-->
+        <div class="pet">
+            <img id="imgPet3" src="oscar.jpg" alt="">
+
+            <div id="petInfo3">
+                <h2>Oscar</h2>
+                <p id="petText3">Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+
+            </div>
+
+            <!--Oscar: pet counter-->
+            <div id="blockCounter3">
+
+                <div id="blockCounter2-3">
+                    <p id="petCounter3">8</p>
+                    <p id="pettingTitle3">Petting(s)</p>
+                </div>
+
+                <button onclick="AddPet3()" id="ButtonPet3">Pet Oscar</button>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!--End!-->
+    </body>
+
+</html>
